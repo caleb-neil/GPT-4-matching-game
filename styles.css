@@ -1,0 +1,68 @@
+body {
+  background-color: antiquewhite;
+}
+
+#container {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  top: 50px;
+  border: 5px solid black;
+  margin: auto;
+  background-color: aliceblue;
+}
+
+@keyframes myAnimation{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    display: none;
+    opacity: 0;
+  }
+}
+
+.box {
+  position: absolute;
+  width: auto;
+  height: auto;
+  background-color: white;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: grab;
+  user-select: none;
+  max-width: 300px;
+}
+
+.box:hover {
+  background-color: beige;
+}
+
+.disappear {
+  animation-name: myAnimation;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+  user-select: none;
+}
+
+.top-layer {
+  z-index: 9999;
+}
+
+h1 {
+  text-align: center;
+}
+
+#start_python {
+  justify-content: center;
+}
+
+pre {
+  white-space: pre-wrap;
+}
